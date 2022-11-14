@@ -10,7 +10,7 @@ export class ScatterOnCollision extends Behaviour {
     @serializeable(AssetReference)
     myPrefab?: AssetReference;
 
-    async onCollisionEnter(_col: Collision) {
+    async onCollisionEnter(_collision: Collision) {
         if (this.cubeScattered05) {
             this.cubeScattered05.visible = true;
         }

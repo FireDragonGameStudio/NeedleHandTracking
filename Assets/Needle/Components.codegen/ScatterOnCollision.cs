@@ -10,7 +10,7 @@ namespace Needle.Typescript.GeneratedComponents
 		public UnityEngine.GameObject @cubeScattered05;
 		public UnityEngine.GameObject @cubeScattered025;
 		public UnityEngine.Transform @myPrefab;
-		public void onCollisionEnter(UnityEngine.Collision @_col){}
+		public void onCollisionEnter(UnityEngine.Collision @_collision){}
 	}
 }
 
