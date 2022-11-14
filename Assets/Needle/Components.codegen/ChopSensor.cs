@@ -7,7 +7,7 @@ namespace Needle.Typescript.GeneratedComponents
 {
 	public partial class ChopSensor : UnityEngine.MonoBehaviour
 	{
-		public Needle.Engine.Components.WebXR @webXR;
+		public UnityEngine.UI.Text @scoreText;
 		public void start(){}
 		public void onTriggerEnter(object @col){}
 	}

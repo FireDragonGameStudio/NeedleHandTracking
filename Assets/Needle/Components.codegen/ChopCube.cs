@@ -5,9 +5,11 @@
 
 namespace Needle.Typescript.GeneratedComponents
 {
-	public partial class CubeDestroyer : UnityEngine.MonoBehaviour
+	public partial class ChopCube : UnityEngine.MonoBehaviour
 	{
+		public void start(){}
 		public void update(){}
+		public void onTriggerEnter(object @col){}
 	}
 }
 

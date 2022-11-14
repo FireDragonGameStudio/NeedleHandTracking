@@ -1,19 +1,19 @@
 {
   "dependencies": {
     "com.needle.engine": {
-      "version": "2.44.0-pre",
+      "version": "2.45.0-pre",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.needle.tools"
     },
     "com.needle.engine-exporter": {
-      "version": "2.46.0-pre",
+      "version": "2.47.0-pre",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.needle.engine": "2.44.0-pre",
-        "org.khronos.unitygltf": "1.18.2-pre",
+        "com.needle.engine": "2.45.0-pre",
+        "org.khronos.unitygltf": "1.18.3-pre",
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.modules.uielements": "1.0.0",
@@ -27,7 +27,7 @@
       "url": "https://packages.needle.tools"
     },
     "com.unity.collab-proxy": {
-      "version": "1.17.2",
+      "version": "1.17.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -120,7 +120,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.4.3",
+      "version": "1.5.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -215,7 +215,7 @@
       "url": "https://packages.unity.com"
     },
     "org.khronos.unitygltf": {
-      "version": "1.18.2-pre",
+      "version": "1.18.3-pre",
       "depth": 1,
       "source": "registry",
       "dependencies": {

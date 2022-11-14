@@ -5,9 +5,10 @@
 
 namespace Needle.Typescript.GeneratedComponents
 {
-	public partial class CubeMovement : UnityEngine.MonoBehaviour
+	public partial class ControllerFollower : UnityEngine.MonoBehaviour
 	{
-		public void start(){}
+		public void update(){}
+		public void setFollowTarget(object @followThis){}
 	}
 }
 

@@ -10,7 +10,7 @@
     "pack-gltf": "npm run pack-gltf --prefix node_modules/@needle-tools/engine"
   },
   "dependencies": {
-    "@needle-tools/engine": "file:../../Library/PackageCache/com.needle.engine@2.44.0-pre/package~",
+    "@needle-tools/engine": "file:../../Library/PackageCache/com.needle.engine@2.45.0-pre/package~",
     "three": "file:../../Library/PackageCache/com.needle.engine@2.44.0-pre/package~/node_modules/three"
   },
   "devDependencies": {
