@@ -7,8 +7,9 @@ namespace Needle.Typescript.GeneratedComponents
 {
 	public partial class CubeSpawner : UnityEngine.MonoBehaviour
 	{
-		public UnityEngine.Transform @blueCubePrefab;
-		public UnityEngine.Transform @redCubePrefab;
+		public Needle.Typescript.GeneratedComponents.CubePool @blueCubePool;
+		public Needle.Typescript.GeneratedComponents.CubePool @redCubePool;
+		public Needle.Typescript.GeneratedComponents.CubePool @greenCubePool;
 		public void update(){}
 	}
 }

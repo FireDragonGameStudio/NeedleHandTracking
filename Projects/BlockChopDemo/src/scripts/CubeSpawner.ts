@@ -1,24 +1,27 @@
-import { AssetReference, Behaviour, GameObject, Renderer, serializeable } from "@needle-tools/engine";
-import { IGameObject } from "@needle-tools/engine/engine/engine_types";
+import { Behaviour, GameObject, serializeable } from "@needle-tools/engine";
+import { CubePool } from "./CubePool";
 
 export class CubeSpawner extends Behaviour {
-    @serializeable(AssetReference)
-    blueCubePrefab?: AssetReference;
+    @serializeable(CubePool)
+    blueCubePool?: CubePool;
 
-    @serializeable(AssetReference)
-    redCubePrefab?: AssetReference;
+    @serializeable(CubePool)
+    redCubePool?: CubePool;
+
+    @serializeable(CubePool)
+    greenCubePool?: CubePool;
 
     private timestep: number = 0;
-    private spawnInterval: number = 2;
+    private spawnInterval: number = 1;
 
-    async update() {
+    update() {
         if (this.timestep < this.spawnInterval) {
             this.timestep += this.context.time.deltaTime;
             return;
         }
         this.timestep = 0;
 
-        var cubeElement = await this.getRedOrBlue();
+        var cubeElement = this.getRedOrBlue();
         if (!cubeElement) return;
 
         // spawn the cubes at a certain distance
@@ -35,12 +38,16 @@ export class CubeSpawner extends Behaviour {
     }
 
     // get either red or blue cube
-    private async getRedOrBlue(): Promise<IGameObject | null | undefined> {
+    private getRedOrBlue(): GameObject | null | undefined {
+        const randomNumber = this.getRandomNumber(10, 0);
         // blue
-        if (this.getRandomNumber(10, 0) > 5) {
-            return await this.blueCubePrefab?.instantiate();
+        if (randomNumber > 6.66) {
+            return this.blueCubePool?.getFromPool();
         }
         // red
-        return await this.redCubePrefab?.instantiate();
+        if (randomNumber > 3.33) {
+            return this.redCubePool?.getFromPool();
+        }
+        return this.greenCubePool?.getFromPool();
     }
 }

@@ -1,7 +1,7 @@
 import { Behaviour, GameObject, Renderer, serializeable, Text } from "@needle-tools/engine";
-import { WebXREvent } from "@needle-tools/engine/engine-components/WebXR";
 import { ICollider } from "@needle-tools/engine/engine/engine_types";
-import { Color, XRSession } from "three";
+import { Color } from "three";
+import { ChopCubeTag } from "./ChopCubeTag";
 
 export class ChopSensor extends Behaviour {
     @serializeable(Text)
@@ -22,17 +22,18 @@ export class ChopSensor extends Behaviour {
         this.currentScoreCount = Number(this.scoreText.text);
         this.chopColor = this.rendererChop.sharedMaterial["color"];
 
+        var chopCubeTag = GameObject.getComponent(col.gameObject, ChopCubeTag);
         var renderer = GameObject.getComponent(col.gameObject, Renderer);
         if (!renderer) return;
 
         // check for matching colors
-        if (renderer.sharedMaterial["color"].equals(this.chopColor)) {
-            console.log("SENSOR MATCH block & chop", renderer.sharedMaterial["color"], this.chopColor);
+        if (chopCubeTag && renderer.sharedMaterial["color"].equals(this.chopColor)) {
+            // console.log("SENSOR MATCH block & chop", renderer.sharedMaterial["color"], this.chopColor);
             this.currentScoreCount++;
         } else {
-            console.log("SENSOR NO MATCH block & chop", renderer.sharedMaterial["color"], this.chopColor);
+            // console.log("SENSOR NO MATCH block & chop", renderer.sharedMaterial["color"], this.chopColor);
         }
-        
+
         this.scoreText.text = this.currentScoreCount.toString();
     }
 }

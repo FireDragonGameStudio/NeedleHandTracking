@@ -8,12 +8,12 @@
 
 [36mvite v3.2.3 [32mbuilding for production...[36m[39m
 transforming...
-[32m✓[39m 300 modules transformed.
+[32m✓[39m 305 modules transformed.
 rendering chunks...
 [90m[37m[2mdist/[22m[90m[39m[32massets/favicon.8d99ceea.ico  [39m [2m14.73 KiB[22m
 [90m[37m[2mdist/[22m[90m[39m[32mindex.html                   [39m [2m1.00 KiB[22m
 [90m[37m[2mdist/[22m[90m[39m[35massets/index.835dd854.css    [39m [2m1.19 KiB / gzip: 0.54 KiB[22m
-[90m[37m[2mdist/[22m[90m[39m[36massets/index.c3289b11.js     [39m [33m4179.20 KiB / gzip: 1308.60 KiB[39m
+[90m[37m[2mdist/[22m[90m[39m[36massets/index.7ce3db58.js     [39m [33m4183.47 KiB / gzip: 1309.69 KiB[39m
 
 > my-project@1.0.0 copy-files
 > copy-files-from-to
@@ -23,9 +23,9 @@ Reading copy instructions from file package.json
 Starting copy operation in "default" mode:
  ✓ Copied [ utf8 ] assets/arial-msdf.json to dist/assets/arial-msdf.json
  ✓ Copied [binary] assets/arial.png to dist/assets/arial.png
- ✓ Copied [binary] assets/BlueChopCube.glb to dist/assets/BlueChopCube.glb
- ✓ Copied [binary] assets/RedChopCube.glb to dist/assets/RedChopCube.glb
+ ✓ Copied [binary] assets/dubstep.mp3 to dist/assets/dubstep.mp3
  ✓ Copied [binary] assets/sceneRoot.glb to dist/assets/sceneRoot.glb
+ ✓ Copied [binary] assets/slash1-94367.mp3 to dist/assets/slash1-94367.mp3
  ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/console/ConsoleReroute.js to dist/include/console/ConsoleReroute.js
  ✓ Copied [ utf8 ] node_modules/@needle-tools/engine/include/draco/draco_decoder.js to dist/include/draco/draco_decoder.js
  ✓ Copied [binary] node_modules/@needle-tools/engine/include/draco/draco_decoder.wasm to dist/include/draco/draco_decoder.wasm
@@ -75,42 +75,8 @@ You can define a toktx search path by adding --toktxPath <path> to the command l
 Debug false
 Prefix basepath: C:\Users\marku\Documents\UnityProjects\NeedleHandTracking\Projects\BlockChopDemo
 GLB files in C:\Users\marku\Documents\UnityProjects\NeedleHandTracking\Projects\BlockChopDemo\dist\assets: [
-  'C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/BlueChopCube.glb',
-  'C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/RedChopCube.glb',
   'C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/sceneRoot.glb'
 ]
-now packing: C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/BlueChopCube.glb
-READ NEEDLE_gameobject_data
-READ NEEDLE_components
-READ NEEDLE_lightmaps
-READ NEEDLE_lighting_settings
-READ EXT_texture_exr
-toktx: Found KTX-Software v4.1.0-rc3.
-toktx:texture(1/1): Slots → []
-[KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
-[KHR_draco_mesh_compression] Compressed 1 primitives.
-WRITE NEEDLE_gameobject_data
-WRITE NEEDLE_components
-WRITE NEEDLE_lightmaps
-WRITE NEEDLE_lighting_settings
-WRITE EXT_texture_exr
-packing done C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/BlueChopCube.glb
-now packing: C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/RedChopCube.glb
-READ NEEDLE_gameobject_data
-READ NEEDLE_components
-READ NEEDLE_lightmaps
-READ NEEDLE_lighting_settings
-READ EXT_texture_exr
-toktx: Found KTX-Software v4.1.0-rc3.
-toktx:texture(1/1): Slots → []
-[KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
-[KHR_draco_mesh_compression] Compressed 1 primitives.
-WRITE NEEDLE_gameobject_data
-WRITE NEEDLE_components
-WRITE NEEDLE_lightmaps
-WRITE NEEDLE_lighting_settings
-WRITE EXT_texture_exr
-packing done C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/RedChopCube.glb
 now packing: C:/Users/marku/Documents/UnityProjects/NeedleHandTracking/Projects/BlockChopDemo/dist/assets/sceneRoot.glb
 READ NEEDLE_gameobject_data
 READ NEEDLE_components
@@ -120,10 +86,10 @@ READ EXT_texture_exr
 toktx: Found KTX-Software v4.1.0-rc3.
 toktx:texture(1/2): Slots → []
 toktx:texture(2/2): Slots → []
-toktx:texture(2/2): Spawning → toktx --genmipmap --bcmp --threads 16 C:\Users\marku\AppData\Local\Temp/gltf-transform/Kzwr87_1.ktx2 C:\Users\marku\AppData\Local\Temp/gltf-transform/Kzwr87_1.png
-toktx:texture(2/2): 20.04 KB → 8.95 KB bytes
+toktx:texture(2/2): Spawning → toktx --genmipmap --bcmp --threads 16 C:\Users\marku\AppData\Local\Temp/gltf-transform/eGbMkb_1.ktx2 C:\Users\marku\AppData\Local\Temp/gltf-transform/eGbMkb_1.png
+toktx:texture(2/2): 20.17 KB → 8.99 KB bytes
 [KHR_draco_mesh_compression] Compression options: {"method":1,"encodeSpeed":5,"decodeSpeed":5,"quantizationBits":{"POSITION":14,"NORMAL":10,"COLOR":8,"TEX_COORD":12,"GENERIC":12},"quantizationVolume":"mesh"}
-[KHR_draco_mesh_compression] Compressed 4 primitives.
+[KHR_draco_mesh_compression] Compressed 6 primitives.
 WRITE NEEDLE_gameobject_data
 WRITE NEEDLE_components
 WRITE NEEDLE_lightmaps
