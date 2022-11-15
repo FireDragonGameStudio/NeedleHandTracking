@@ -1,5 +1,5 @@
 # Needle Saber Prototype
-This is just a simple prototype built with Needle Engine and Unity 2021.3.13f1. It can be played via entering the following link in your headset browser: https://light-crystal-org.glitch.me/ Check out this Youtube video to see it in action -> https://youtu.be/xzeIxFg9zyI
+This is just a simple prototype built with Needle Engine and Unity 2021.3.13f1. It can be played via entering the following link in your headset browser: https://light-crystal-org.glitch.me/ Check out this Youtube video to see it in action -> https://youtu.be/xzeIxFg9zyI Check out Needle Engine too -> https://needle.tools/
 
 ## Game Mechanics
 Everybody knows BeatSaber, so it follows the simple principle of hitting a cube with a saber that matches its color. The special twist in this version is that you can change the colors of your saber (red, lime, blue) by pressing the trigger, when playing with controllers, or by pinching when playing in hand tracking mode. There is no real end here, play as long as you like (or my Glitch hours are used up Oo) Feel free to fork and play around yourself. :)
